@@ -1,29 +1,29 @@
 @disable-bundler
-Feature: Install bourbon files
+Feature: Install YAML files
 
-  Scenario: Bourbon generates a new bourbon installation
-    When I run `bundle exec bourbon install`
+  Scenario: yamlcss generates a new YAML installation
+    When I run `bundle exec yamlcss install`
     Then the sass directories should have been generated
     And the following directories should exist:
-      | bourbon     |
-    And the master bourbon partial should have been generated
-    And the output should contain "Bourbon files installed to bourbon/"
+      | yaml     |
+    And the master yaml partial should have been generated
+    And the output should contain "YAML files installed to yaml/"
 
-  Scenario: Generating does not overwrite an existing bourbon directory
-    Given bourbon is already installed
-    When I run `bundle exec bourbon install`
-    Then the output should contain "Bourbon files already installed, doing nothing."
+  Scenario: Generating does not overwrite an existing yaml directory
+    Given YAML is already installed
+    When I run `bundle exec yamlcss install`
+    Then the output should contain "YAML files already installed, doing nothing."
 
-  Scenario: Install Bourbon into a custom path
-    When I run `bundle exec bourbon install --path=custom_path`
+  Scenario: Install YAML into a custom path
+    When I run `bundle exec yamlcss install --path=custom_path`
     Then the sass directories with "custom_path" prefix should have been generated
     And the following directories should exist:
-      | custom_path/bourbon     |
-    And the master bourbon partial should have been generated within "custom_path" directory
-    And the output should contain "Bourbon files installed to custom_path/bourbon/"
+      | custom_path/yaml     |
+    And the master yaml partial should have been generated within "custom_path" directory
+    And the output should contain "YAML files installed to custom_path/yaml/"
 
-  Scenario: Forcing install of bourbon
-    Given bourbon is already installed
-    When I run `bundle exec bourbon install --force`
-    Then the output from "bundle exec bourbon install --force" should contain "Bourbon files installed to bourbon/"
-    And the output should not contain "Bourbon files already installed, doing nothing."
+  Scenario: Forcing install of YAML
+    Given YAML is already installed
+    When I run `bundle exec yamlcss install --force`
+    Then the output from "bundle exec yamlcss install --force" should contain "YAML files installed to yaml/"
+    And the output should not contain "YAML files already installed, doing nothing."
