@@ -19,10 +19,8 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = 'yamlcss'
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  #s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.executables = 'yamlcss'
+  s.files         = `find . | grep -v "/.git"`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib']
 
   #s.add_dependency('sass', '>= 3.3.0.rc.1')
