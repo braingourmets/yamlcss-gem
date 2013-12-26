@@ -70,7 +70,7 @@ module Yamlcss
     end
 
     def stylesheets_directory
-      File.join(top_level_directory, 'app', 'assets', 'stylesheets')
+      File.join(top_level_directory, 'yaml')
     end
 
     def top_level_directory
