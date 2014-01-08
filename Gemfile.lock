@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    yamlcss (4.1.2)
+    yamlcss (1.0.0)
       sass (~> 3.2.12)
       thor
 
