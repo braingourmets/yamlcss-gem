@@ -4,7 +4,11 @@
 
 task default: [:test]
 
-task test: [:rubocop, :reek]
+task test: [:travis_lint, :rubocop, :reek]
+
+task :travis_lint do
+  sh 'travis-lint'
+end
 
 task :rubocop do
   sh 'rubocop . Rakefile'

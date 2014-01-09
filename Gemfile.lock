@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (1.1.0)
+    hashr (0.0.22)
     parser (2.1.2)
       ast (~> 1.1)
       slop (~> 3.4, >= 3.4.5)
@@ -22,6 +23,8 @@ GEM
       sexp_processor (~> 4.1)
     sexp_processor (4.4.1)
     slop (3.4.7)
+    travis-lint (1.7.0)
+      hashr (~> 0.0.22)
 
 PLATFORMS
   ruby
@@ -29,3 +32,4 @@ PLATFORMS
 DEPENDENCIES
   reek
   rubocop
+  travis-lint
