@@ -4,4 +4,8 @@
 
 task :default => [:test]
 
-task test: []
+task test: [:rubocop]
+
+task :rubocop do
+  sh 'rubocop .'
+end
