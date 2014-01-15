@@ -1,4 +1,8 @@
-source "http://rubygems.org"
+source 'https://rubygems.org'
 
-# Specify your gem's dependencies in sass-mixins.gemspec
-gemspec
+group :test do
+  # Style checkers
+  gem 'travis-lint'
+  gem 'rubocop'
+  gem 'reek'
+end
