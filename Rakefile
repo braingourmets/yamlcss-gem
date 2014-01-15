@@ -2,7 +2,7 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be
 # available to Rake.
 
-task default: [:test]
+task default: :test
 
 task test: [:travis_lint, :rubocop, :reek]
 
@@ -11,9 +11,9 @@ task :travis_lint do
 end
 
 task :rubocop do
-  sh 'rubocop . Rakefile'
+  sh 'rubocop Gemfile Rakefile'
 end
 
 task :reek do
-  sh 'reek . Rakefile'
+  sh 'reek Gemfile Rakefile'
 end
