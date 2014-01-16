@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'aruba', '~> 0.4'
   s.add_development_dependency 'rake'
 
+  s.post_install_message = 'Thank you for installing YAML!'
+
   s.rubyforge_project = 'yamlcss'
 
   s.files         = `find . | grep -v "/.git"`.split("\n")
