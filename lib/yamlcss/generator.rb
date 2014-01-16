@@ -2,7 +2,9 @@ require 'yamlcss/version'
 require 'fileutils'
 require 'thor'
 
-module Yamlcss
+# YAML gemerator with install methods.
+module YamlCss
+  # Use Thor for own generator.
   class Generator < Thor
     map %w(-v --version) => :version
 
@@ -31,7 +33,7 @@ module Yamlcss
 
     desc 'version', 'Show YAML version'
     def version
-      say "YAML #{Yamlcss::VERSION}"
+      say "YAML #{YamlCss::VERSION}"
     end
 
     private
