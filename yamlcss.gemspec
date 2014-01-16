@@ -4,7 +4,7 @@ require 'yamlcss/version'
 
 Gem::Specification.new do |s|
   s.name        = 'yamlcss'
-  s.version     = Yamlcss::VERSION
+  s.version     = YamlCss::VERSION
   s.date        = '2014-01-08'
   s.summary     = 'YAML CSS Framework'
   s.description = 'A modular CSS framework for truly flexible, accessible and responsive websites'
@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
 
   s.files         = `find . | grep -v "/.git"`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = 'lib'
+  s.require_paths = ['lib']
 end
