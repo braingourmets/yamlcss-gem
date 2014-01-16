@@ -43,11 +43,13 @@ module YamlCss
     end
 
     def install_path
-      @install_path ||= if options[:path]
-        Pathname.new(File.join(options[:path], 'yaml'))
+      options_path = options[:path]
+      if options_path
+        new_install_path = Pathname.new(File.join(options_path, 'yaml'))
       else
-        Pathname.new('yaml')
+        new_install_path = Pathname.new('yaml')
       end
+      @install_path ||= new_install_path
     end
 
     def install_files
