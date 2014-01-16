@@ -4,9 +4,7 @@ $LOAD_PATH.unshift dir unless $LOAD_PATH.include?(dir)
 
 require 'yamlcss/generator'
 
-unless defined?(Sass)
-  require 'sass'
-end
+require 'sass' unless defined?(Sass)
 
 # Check if Rails and Rails Engine is defined and define Sass load path.
 module YamlCss
