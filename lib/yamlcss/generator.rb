@@ -74,10 +74,10 @@ module YamlCss
     end
 
     def stylesheets_directory
-      File.join(top_level_directory, 'yaml')
+      File.join(Generator.top_level_directory, 'yaml')
     end
 
-    def top_level_directory
+    def self.top_level_directory
       File.dirname(File.dirname(File.dirname(__FILE__)))
     end
   end
