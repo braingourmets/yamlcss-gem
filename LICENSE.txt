@@ -1,16 +1,12 @@
+License for the YAML Gem
+========================
+
+Copyright (c) 2014 Brain Gourmets GmbH
+
 The YAML Gem is published under the MIT license (all except for the yaml/
 directory).
 
-The YAML framework is published under the Creative Commons Attribution 2.0
-License (CC-BY 2.0) <https://creativecommons.org/licenses/by/2.0/>, which
-permits both private and commercial use.
-Condition: For the free use of the YAML framework, a backlink to the YAML
-homepage (http://www.yaml.de) in a suitable place (e.g.: footer of the website
-or in the imprint) is required.
-
 The MIT License (MIT)
-
-Copyright (c) 2014 Brain Gourmets GmbH
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -29,3 +25,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+License for the YAML framework
+==============================
+
+Copyright (c) 2005-2013 Dirk Jesse
+
+The YAML framework is published under the Creative Commons Attribution 2.0
+License (CC-BY 2.0) <https://creativecommons.org/licenses/by/2.0/>, which
+permits both private and commercial use.
+
+Condition: For the free use of the YAML framework, a backlink to the YAML
+homepage (http://www.yaml.de) in a suitable place (e.g.: footer of the website
+or in the imprint) is required.
