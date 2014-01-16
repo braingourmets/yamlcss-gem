@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
+$LOAD_PATH.push File.expand_path('../lib', __FILE__)
 require 'yamlcss/version'
 
 Gem::Specification.new do |s|
@@ -7,7 +7,8 @@ Gem::Specification.new do |s|
   s.version     = YamlCss::VERSION
   s.date        = '2014-01-08'
   s.summary     = 'YAML CSS Framework'
-  s.description = 'A modular CSS framework for truly flexible, accessible and responsive websites'
+  s.description = 'A modular CSS framework for truly flexible, ' +
+                  'accessible and responsive websites'
   s.authors     = ['Dirk Jesse']
   s.email       = 'office@highresolution.info'
   s.files       = ['lib/yamlcss.rb']
@@ -22,6 +23,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = 'yamlcss'
 
   s.files         = `find . | grep -v "/.git"`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.executables   = `git ls-files -- bin/*`.split("\n")
+    .map { |f| File.basename(f) }
   s.require_paths = ['lib']
 end
