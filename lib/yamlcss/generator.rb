@@ -4,10 +4,10 @@ require 'thor'
 
 module Yamlcss
   class Generator < Thor
-    map ['-v', '--version'] => :version
+    map %w(-v --version) => :version
 
     desc 'install', 'Install YAML into your project'
-    method_options :path => :string, :force => :boolean
+    method_options path: :string, force: :boolean
     def install
       if yaml_files_already_exist? && !options[:force]
         puts 'YAML files already installed, doing nothing.'
@@ -18,7 +18,7 @@ module Yamlcss
     end
 
     desc 'update', 'Update Bourbon'
-    method_options :path => :string
+    method_options path: :string
     def update
       if yaml_files_already_exist?
         remove_yaml_directory
@@ -42,10 +42,10 @@ module Yamlcss
 
     def install_path
       @install_path ||= if options[:path]
-          Pathname.new(File.join(options[:path], 'yaml'))
-        else
-          Pathname.new('yaml')
-        end
+        Pathname.new(File.join(options[:path], 'yaml'))
+      else
+        Pathname.new('yaml')
+      end
     end
 
     def install_files
