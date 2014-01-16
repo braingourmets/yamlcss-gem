@@ -6,4 +6,5 @@ group :test do
   gem 'travis-lint'
   gem 'rubocop'
   gem 'reek'
+  gem 'scss-lint'
 end

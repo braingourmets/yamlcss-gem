@@ -4,16 +4,20 @@
 
 task default: :test
 
-task test: [:travis_lint, :rubocop, :reek]
+task test: [:travis_lint, :rubocop, :reek, :scss_lint]
 
 task :travis_lint do
   sh 'travis-lint'
 end
 
 task :rubocop do
-  sh 'rubocop Gemfile Rakefile'
+  sh 'rubocop Gemfile Rakefile yamlcss.gemspec lib/'
 end
 
 task :reek do
-  sh 'reek Gemfile Rakefile'
+  sh 'reek Gemfile Rakefile yamlcss.gemspec lib/'
+end
+
+task :scss_lint do
+  sh 'scss-lint vendor/assets/stylesheets/'
 end
