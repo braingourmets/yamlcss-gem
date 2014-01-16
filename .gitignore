@@ -1,0 +1,13 @@
+# Ignore system files
+*.Thumbs.db
+*.thumbs.db
+*.DS_Store
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore common IDE files.
+*.idea
+
+# Ignore any local gems.
+*.gem
