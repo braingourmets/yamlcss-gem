@@ -1,6 +1,6 @@
 # CodeKit needs relative paths
 dir = File.dirname(__FILE__)
-$LOAD_PATH.unshift dir unless $LOAD_PATH.include? (dir)
+$LOAD_PATH.unshift dir unless $LOAD_PATH.include?(dir)
 
 require 'yamlcss/generator'
 
@@ -14,6 +14,9 @@ module Yamlcss
       require 'yamlcss/engine'
     end
   else
-    Sass.load_paths << File.expand_path('../../vendor/assets/stylesheets', __FILE__)
+    Sass.load_paths << File.expand_path(
+      '../../vendor/assets/stylesheets',
+      __FILE__
+    )
   end
 end
