@@ -66,14 +66,14 @@ module YamlCss
     end
 
     def copy_in_scss_files
-      FileUtils.cp_r(all_stylesheets, install_path)
+      FileUtils.cp_r(Generator.all_stylesheets, install_path)
     end
 
-    def all_stylesheets
-      Dir["#{stylesheets_directory}/*"]
+    def self.all_stylesheets
+      Dir["#{Generator.stylesheets_directory}/*"]
     end
 
-    def stylesheets_directory
+    def self.stylesheets_directory
       File.join(Generator.top_level_directory, 'yaml')
     end
 
