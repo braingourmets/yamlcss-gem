@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary     = 'YAML CSS Framework'
   s.description = 'A modular CSS framework for truly flexible, ' +
                   'accessible and responsive websites'
-  s.authors     = ['Michael Schulze']
+  s.authors     = ['Michael Schulze', 'Oliver Klee']
   s.email       = 'm.schulze@braingourmets.com'
   s.files       = ['lib/yamlcss.rb']
   s.homepage    = 'https://github.com/braingourmets/yaml-gem'
