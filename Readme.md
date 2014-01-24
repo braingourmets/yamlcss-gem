@@ -1,6 +1,7 @@
 # YAML CSS Framework as Gem for Ruby on Rails
 
 [![Build Status](https://travis-ci.org/braingourmets/yaml-gem.png?branch=master)](https://travis-ci.org/braingourmets/yaml-gem)
+[![Code Climate](https://codeclimate.com/github/braingourmets/yaml-gem.png)](https://codeclimate.com/github/braingourmets/yaml-gem)
 
 YAML (*Yet Another Multicolumn Layout*) is a modular CSS framework for truly
 flexible, accessible and responsive websites. YAML is focussed on device
@@ -39,7 +40,7 @@ stylesheets must be imported below YAML:
 ## Non-Rails projects
 
 YAML includes an easy way to generate a directory with all the necessary
-files.  
+files.
 For command line help: `$ yaml help`
 
 ### Install (YAML v4.1+)
