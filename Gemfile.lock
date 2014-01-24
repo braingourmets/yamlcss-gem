@@ -14,7 +14,7 @@ GEM
       ast (~> 1.1)
       slop (~> 3.4, >= 3.4.5)
     powerpack (0.0.9)
-    rainbow (1.99.1)
+    rainbow (1.99.2)
     rake (10.1.1)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
