@@ -15,7 +15,9 @@ design.
 
 ### Requirements
 
-Sass 3.2+ (if you want to use YAML Sass files)
+* Ruby >= 1.9.3
+
+* Sass 3.2+ (if you want to use YAML Sass files)
 
 ## Install for Rails 3.1+
 
@@ -39,7 +41,7 @@ stylesheets must be imported below YAML:
 ## Non-Rails projects
 
 YAML includes an easy way to generate a directory with all the necessary
-files.  
+files.
 For command line help: `$ yaml help`
 
 ### Install (YAML v4.1+)
