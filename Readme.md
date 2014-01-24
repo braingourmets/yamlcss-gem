@@ -16,7 +16,9 @@ design.
 
 ### Requirements
 
-Sass 3.2+ (if you want to use YAML Sass files)
+* Ruby >= 1.9.3
+
+* Sass 3.2+ (if you want to use YAML Sass files)
 
 ## Install for Rails 3.1+
 
