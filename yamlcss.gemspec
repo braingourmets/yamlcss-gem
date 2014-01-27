@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.authors               = ['Michael Schulze', 'Oliver Klee']
   s.email                 = 'm.schulze@braingourmets.com'
   s.files                 = ['lib/yamlcss.rb']
-  s.homepage              = 'https://github.com/braingourmets/yaml-gem'
+  s.homepage              = 'https://github.com/braingourmets/yamlcss-gem'
   s.license               = 'CC-BY 2.0'
   s.required_ruby_version = '>= 1.9.3'
   s.post_install_message  = 'Thank you for installing YAML!'
