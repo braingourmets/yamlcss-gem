@@ -1,7 +1,7 @@
 # YAML CSS Framework as Gem for Ruby on Rails
 
-[![Build Status](https://travis-ci.org/braingourmets/yaml-gem.png?branch=master)](https://travis-ci.org/braingourmets/yaml-gem)
-[![Code Climate](https://codeclimate.com/github/braingourmets/yaml-gem.png)](https://codeclimate.com/github/braingourmets/yaml-gem)
+[![Build Status](https://travis-ci.org/braingourmets/yamlcss-gem.png?branch=master)](https://travis-ci.org/braingourmets/yamlcss-gem)
+[![Code Climate](https://codeclimate.com/github/braingourmets/yamlcss-gem.png)](https://codeclimate.com/github/braingourmets/yamlcss-gem)
 [![Gem Version](https://badge.fury.io/rb/yamlcss.png)](http://badge.fury.io/rb/yamlcss)
 
 YAML (*Yet Another Multicolumn Layout*) is a modular CSS framework for truly
