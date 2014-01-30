@@ -44,7 +44,7 @@ stylesheets must be imported below YAML:
 
 YAML includes an easy way to generate a directory with all the necessary
 files.
-For command line help: `$ yaml help`
+For command line help: `$ yamlcss help`
 
 ### Install (YAML v4.1+)
 
@@ -52,7 +52,7 @@ For command line help: `$ yaml help`
 
 Install YAML into the current directory by generating the `yaml` folder:
 
-    yaml install
+    yamlcss install
 
 The generated folder will contain all the YAML files (CSS & Sass). It is
 recommended not to add or modify the YAML files so that you can update YAML
@@ -60,7 +60,7 @@ easily.
 
 You can specify a target directory using the `path` flag:
 
-    yaml install --path my/custom/path/
+    yamlcss install --path my/custom/path/
 
 ### Import Sass
 
