@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version               = YamlCss::VERSION
   s.date                  = '2014-01-17'
   s.summary               = 'YAML CSS Framework'
-  s.description           = 'A modular CSS framework for truly flexible, ' +
+  s.description           = 'A modular CSS framework for truly flexible, ' \
                             'accessible and responsive websites'
   s.authors               = ['Michael Schulze', 'Oliver Klee']
   s.email                 = 'm.schulze@braingourmets.com'
