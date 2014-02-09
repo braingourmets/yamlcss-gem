@@ -13,6 +13,9 @@ design.
 * Latest version: 4.1.2
 * Website: http://www.yaml.de
 
+This gem is brought to you by the [Brain Gourmets](http://www.braingourmets.com/),
+[@braingourmets](https://twitter.com/braingourmets) at Twitter.
+
 ## Documentation
 
 ### Requirements
