@@ -25,6 +25,11 @@ This gem is brought to you by the [Brain Gourmets](http://www.braingourmets.com/
 
 * Sass 3.2+ (if you want to use YAML Sass files)
 
+### Version numbering scheme
+
+The version numbers of this gem follow the
+[Semantic Versioning 2.0.0](http://semver.org/) schema.
+
 ## Install for Rails 3.1+
 
 In your Gemfile:
