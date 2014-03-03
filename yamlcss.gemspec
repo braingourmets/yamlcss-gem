@@ -17,11 +17,15 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
   s.post_install_message  = 'Thank you for installing YAML!'
 
-  s.add_dependency 'sass', '~> 3.2.12'
+  s.add_dependency 'sass'
   s.add_dependency 'thor'
 
-  s.add_development_dependency 'aruba', '~> 0.4'
+  s.add_development_dependency 'aruba'
   s.add_development_dependency 'rake'
+  s.add_development_dependency 'travis-lint'
+  s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'reek'
+  s.add_development_dependency 'scss-lint'
 
   s.files         = `find . | grep -v "/.git"`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n")
