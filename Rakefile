@@ -4,7 +4,7 @@
 
 task default: :test
 
-task test: [:travis_lint, :rubocop, :reek, :scss_lint]
+task test: [:rubocop, :reek, :scss_lint]
 
 task :travis_lint do
   sh 'travis-lint'
