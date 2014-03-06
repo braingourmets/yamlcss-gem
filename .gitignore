@@ -11,3 +11,6 @@
 
 # Ignore any local gems.
 *.gem
+
+# Ignore the Gem versions.
+Gemfile.lock
