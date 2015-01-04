@@ -6,10 +6,6 @@ task default: :test
 
 task test: [:rubocop, :reek, :scss_lint]
 
-task :travis_lint do
-  sh 'travis-lint'
-end
-
 task :rubocop do
   sh 'rubocop Gemfile Rakefile yamlcss.gemspec lib/'
 end

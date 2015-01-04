@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'aruba'
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'travis-lint'
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'reek'
   s.add_development_dependency 'scss-lint'
