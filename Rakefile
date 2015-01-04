@@ -15,7 +15,7 @@ task :rubocop do
 end
 
 task :reek do
-  sh 'reek Gemfile Rakefile yamlcss.gemspec lib/'
+  sh 'reek Appraisals Gemfile Rakefile yamlcss.gemspec lib/'
 end
 
 task :scss_lint do

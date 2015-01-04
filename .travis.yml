@@ -2,12 +2,18 @@ language: ruby
 
 cache: bundler
 
+before_install:
+  - git submodule update --init --recursive
+
 rvm:
   - 2.0.0
   - 2.1.0
 
+gemfile:
+  - gemfiles/rails_3.2.gemfile
+  - gemfiles/rails_4.0.gemfile
+  - gemfiles/rails_4.1.gemfile
+  - gemfiles/rails_4.2.gemfile
+
 script:
   - bundle exec rake --trace test
-
-before_install:
-  - git submodule update --init --recursive
