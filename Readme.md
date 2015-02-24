@@ -21,7 +21,7 @@ This gem is brought to you by the [Brain Gourmets](http://www.braingourmets.com/
 
 ### Requirements
 
-* Ruby >= 1.9.3
+* Ruby >= 2.0.0
 
 * Sass 3.2+ (if you want to use YAML Sass files)
 
