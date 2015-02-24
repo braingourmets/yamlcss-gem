@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.files                 = ['lib/yamlcss.rb']
   s.homepage              = 'https://github.com/braingourmets/yamlcss-gem'
   s.license               = 'CC-BY 2.0'
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.0.0'
   s.post_install_message  = 'Thank you for installing YAML!'
 
   s.add_dependency 'sass'
