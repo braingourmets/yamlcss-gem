@@ -57,6 +57,12 @@ module YamlCss
       copy_in_scss_files
     end
 
+    ##
+    # Removes the yaml directory.
+    #
+    # This is a :reek:UtilityFunction.
+    #
+    # @return [void]
     def remove_yaml_directory
       FileUtils.rm_rf('yaml')
     end
