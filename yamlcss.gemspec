@@ -29,6 +29,6 @@ Gem::Specification.new do |s|
 
   s.files         = `find . | grep -v "/.git"`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n")
-                    .map { |f| File.basename(f) }
+                                           .map { |f| File.basename(f) }
   s.require_paths = ['lib']
 end

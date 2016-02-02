@@ -2,7 +2,7 @@ require 'yamlcss/version'
 require 'fileutils'
 require 'thor'
 
-# YAML gemerator with install methods.
+# YAML generator with install methods.
 module YamlCss
   # Use Thor for own generator.
   class Generator < Thor
@@ -44,11 +44,11 @@ module YamlCss
 
     def install_path
       options_path = options[:path]
-      if options_path
-        new_install_path = Pathname.new(File.join(options_path, 'yaml'))
-      else
-        new_install_path = Pathname.new('yaml')
-      end
+      new_install_path = if options_path
+                           Pathname.new(File.join(options_path, 'yaml'))
+                         else
+                           Pathname.new('yaml')
+                         end
       @install_path ||= new_install_path
     end
 
@@ -59,8 +59,6 @@ module YamlCss
 
     ##
     # Removes the yaml directory.
-    #
-    # This is a :reek:UtilityFunction.
     #
     # @return [void]
     def remove_yaml_directory
@@ -75,15 +73,15 @@ module YamlCss
       FileUtils.cp_r(Generator.all_stylesheets, install_path)
     end
 
-    def self.all_stylesheets
+    def all_stylesheets
       Dir["#{Generator.stylesheets_directory}/*"]
     end
 
-    def self.stylesheets_directory
+    def stylesheets_directory
       File.join(Generator.top_level_directory, 'yaml')
     end
 
-    def self.top_level_directory
+    def top_level_directory
       File.dirname(File.dirname(File.dirname(__FILE__)))
     end
   end
